@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = "jenkins34234-s3-bucket-for-index-html-testing-31"
+  bucket = "jenkins34234-s3-bucket-for-index-html-testing-3931"
 }
 
 resource "aws_s3_bucket_public_access_block" "publicallow" {
@@ -33,6 +33,7 @@ resource "aws_s3_object" "index" {
   key           = "index.html"
   source        = "./index.html"
   content_type  = "text/html"
+  etag          = "${md5(file("./index.html"))}"
 }
 
 
