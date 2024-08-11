@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = "jenkins-s3-bucket-for-index-html-testing-9414421276931"
+  bucket = "jenkins34234-s3-bucket-for-index-html-testing-941442127643433931"
 }
 
 resource "aws_s3_bucket_public_access_block" "publicallow" {
